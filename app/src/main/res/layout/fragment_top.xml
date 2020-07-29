@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".TopFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.widget.NestedScrollView
+
+                android:id="@+id/nestedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/info_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bnp2"
+                        android:contentDescription="restaurant image"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#FAFCFB"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:textColor="#145"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Company_name"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_text" />
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeTextId"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="#07158B"
+                android:text="We offer a range of freshly backed Pizza and Pasta dishes. Why not try some?"
+                android:layout_below="@id/nestedView"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerhomeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homeTextId"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical"
+
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
